@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="fitsSystemWindows">false</bool>
+    <bool name="translucentStatusBar">true</bool>
+    <bool name="translucentNavigationBar">false</bool>
+    <color name="status_bar_inset">#0000</color>
+    <dimen name="drawer_margin">0dp</dimen>
+
+    <style name="drawer_width">
+        <item name="android:layout_width">320dp</item>
+    </style>
+
+    <dimen name="margin_padding_8">8dp</dimen>
+    <dimen name="margin_padding_16">16dp</dimen>
+    <dimen name="item_height_avatar_single_line_56_64">56dp</dimen>
+    <dimen name="profile_picture_64">64dp</dimen>
+    <dimen name="drawer_header_height">180dp</dimen>
+</resources>

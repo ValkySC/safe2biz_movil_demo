@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_locale">en</string>
+    <string name="app_name">Safe2biz</string>
+    <string name="drawer_header_image">drawer header image</string>
+    <string name="usuario">User</string>
+    <string name="version">Version 1.0</string>
+    <string name="guion">-</string>
+    <!-- Mensajes -->
+    <string name="lb_mensaje_espera">Cargando ...</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="confirmar">Confirm</string>
+    <string name="cerrarsesion">Close session</string>
+    <string name="cerrarsesion2">Sure to log off ?</string>
+
+    <string name="confirmargps">Enable either GPS or any other location service to find current location.  Click OK to go to location services settings to let you do so.</string>
+    <string name="action_dialog_info">Information</string>
+    <string name="action_search">Search</string>
+    <string name="action_share">Share</string>
+    <string name="iniciarsesion">Login</string>
+    <string name="area">Area</string>
+    <string name="bienvenida_safe2biz">Welcome to Safe2biz</string>
+    <string name="comentario">Commentary</string>
+    <string name="contrasenia">Password</string>
+    <string name="datos_generales">General data</string>
+
+    <string name="empresa_ocurrencia">Company Occurrence:</string>
+    <string name="enviar">Send</string>
+    <string name="evidencias_del_reporte">Evidence of the Report</string>
+    <string name="fecha">Date:</string>
+    <string name="fecha_y_hora">Date and Time</string>
+    <string name="guardar_detalle">Save</string>
+    <string name="nombre_empresa">Company</string>
+    <string name="origen">Origin:</string>
+    <string name="origen_acto">Act</string>
+    <string name="origen_condicion">Condition</string>
+    <string name="turno">Turn</string>
+    <string name="ubicacion">Location</string>
+    <string name="titulo_configuracion">Configure the connection data to the server:</string>
+    <string name="ip_dominio_servidor">IP or Server domain:</string>
+    <string name="ip_dominio">IP or Server</string>
+    <string name="contrasenia_">Password:</string>
+    <string name="usuario_">User:</string>
+    <string name="descargar">Download</string>
+    <string name="lb_modulo_actos_and_condiciones">Módulo de Actos y Condiciones</string>
+    <string name="lb_modulo_acciones_correctivas">Módulo de Acciones Correctivas</string>
+    <string name="lb_modulo_observaciones_preventivas">Módulo de Observaciones Preventivas</string>
+    <string name="lb_titulo_descarga">Download Information</string>
+    <string name="sincronizacion">Sincronize</string>
+    <string name="download">Download</string>
+    <string name="lb_titulo_subida_modulos">Send Information</string>
+    <string name="por_enviar">To send:</string>
+
+</resources>

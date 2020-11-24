@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_locale">es</string>
+    <string name="app_name">Safe2biz</string>
+    <string name="drawer_header_image">drawer header image</string>
+    <string name="contrasenia">Contraseña</string>
+    <string name="iniciarsesion">Iniciar Sesión</string>
+    <string name="usuario">Usuario</string>
+    <string name="usuario_">Usuario:</string>
+    <string name="contrasenia_">Contraseña:</string>
+    <string name="version">Versión 1.0</string>
+    <string name="guion">-</string>
+    <string name="action_search">Buscar</string>
+    <string name="action_share">Compartir</string>
+    <string name="action_dialog_info">Información</string>
+    <string name="guardar_detalle">Guardar</string>
+    <string name="bienvenida_safe2biz">Bienvenido a Safe2biz</string>
+    <string name="enviar">Enviar</string>
+    <string name="por_enviar">Por enviar:</string>
+    <string name="descargar">Descargar</string>
+
+    <string name="comentario">Comentario</string>
+
+    <!-- Sincronizacion de Datos -->
+    <string name="sincronizacion">Sincronización</string>
+    <string name="lb_titulo_descarga">Descarga de Información</string>
+    <string name="lb_titulo_subida_modulos">Envío de Información</string>
+    <string name="lb_modulo_observaciones_preventivas">Módulo de Observaciones Preventivas</string>
+    <string name="lb_modulo_actos_and_condiciones">Módulo de Actos y Condiciones</string>
+    <string name="lb_modulo_acciones_correctivas">Módulo de Acciones Correctivas</string>
+
+    <string name="datos_generales">Datos Generales</string>
+    <string name="fecha_y_hora">Fecha y hora</string>
+    <string name="nombre_empresa">Empresa</string>
+    <string name="turno">Turno</string>
+    <string name="ubicacion">Ubicación</string>
+    <string name="area">Área</string>
+    <string name="download">Download</string>
+
+    <string name="origen">Origen:</string>
+    <string name="origen_acto">Acto</string>
+    <string name="origen_condicion">Condición</string>
+    <string name="empresa_ocurrencia">Empresa Ocurrencia:</string>
+    <string name="fecha">Fecha:</string>
+
+    <string name="evidencias_del_reporte">Evidencias del Reporte</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="ip_dominio_servidor">IP o dominio del servidor:</string>
+    <string name="ip_dominio">IP o dominio</string>
+    <string name="titulo_configuracion">Configurar los datos de conexión al servidor:</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="cerrarsesion">Cerrar Sesión</string>
+    <string name="cerrarsesion2">Esta seguro de cerrar la sesión ?</string>
+    <string name="confirmargps">Habilitar ya sea GPS o cualquier otro servicio de localización para encontrar la ubicación actual . Haga clic en Aceptar para ir a la configuración de los servicios de ubicación para dejar que lo haga.</string>
+    <string name="lb_mensaje_espera">Loading…</string>
+    <string name="login_user" translatable="false">admin</string>
+</resources>

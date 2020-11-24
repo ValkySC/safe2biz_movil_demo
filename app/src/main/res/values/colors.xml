@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- google's material design colours from
+    http://www.google.com/design/spec/style/color.html#color-ui-color-palette -->
+    <!--reds-->
+    <color name="md_red_300">#e57373</color>
+    <color name="md_red_400">#ef5350</color>
+    <color name="md_red_500">#005332</color>
+    <color name="md_red_900">#b71c1c</color>
+    <color name="md_red_A700">#d50000</color>
+    <color name="fondo_transparente">#07000000</color>
+
+    <!-- orange -->
+
+    <!-- pinks -->
+    <!-- purples -->
+    <!-- deep purples -->
+    <!-- indigos -->
+    <color name="md_indigo_500">#3f51b5</color>
+    <!--blues-->
+    <color name="safe2biz_mobile">#355088</color>
+    <color name="safe2biz_logo">#001e53</color>
+    <color name="md_blue_600">#1e88e5</color>
+    <color name="md_blue_900">#0d47a1</color>
+    <!-- light blues-->
+    <!-- cyans -->
+    <!-- teals -->
+    <!-- greens -->
+    <color name="md_green_400">#66bb6a</color>
+    <color name="md_green_600">#43a047</color>
+    <color name="md_green_700">#388e3c</color>
+    <color name="md_green_900">#1b5e20</color>
+    <color name="msi_background_green">#007D29</color>
+    <color name="msi_background_gray">#343535</color>
+
+    <!--light greens-->
+    <!-- limes -->
+    <!--yellows -->
+    <color name="md_yellow_900">#f57f17</color>
+    <!-- ambers -->
+    <!-- oranges -->
+    <color name="md_orange_300">#ffb74d</color>
+    <color name="md_orange_400">#ffa726</color>
+    <!-- deep oranges -->
+    <!-- browns -->
+    <!--grey-->
+    <color name="md_grey_200">#eeeeee</color>
+    <color name="md_grey_600">#757575</color>
+    <color name="md_white_1000">#ffffff</color>
+    <color name="md_black_1000_25">#40000000</color>
+    <color name="md_black_1000_50">#80000000</color>
+    <color name="md_black_1000_75">#c0000000</color>
+    <color name="md_black_1000">#000000</color>
+    <color name="app_fondo_menu">#EEEEEE</color>
+    <color name="app_letra_tab">#4D4D4D</color>
+    <color name="safe2biz_azul">#23317e</color>
+    <color name="safe2biz_colorprimary">#355088</color>
+    <color name="safe2biz_colorprimaryDark">#1D2C4C</color>
+    <color name="safe2biz_anaranjado_logo">#ff9934</color>
+
+    <!--blue grey-->
+    <!--Texts-->
+    <color name="md_text_white">#ffffffff</color>
+    <color name="md_secondary_text_icons_white">#b3ffffff</color>
+    <color name="md_disabled_hint_text_white">#4dffffff</color>
+    <color name="md_text">#df000000</color>
+    <color name="md_secondary_text_icons">#8a000000</color>
+    <color name="md_disabled_hint_text">#4c000000</color>
+    <color name="md_divider">#1f000000</color>
+
+    <!-- app -->
+</resources>

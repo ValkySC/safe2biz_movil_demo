@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<style name="MyMaterialTheme" parent="MyMaterialTheme.Base">-->
+
+    <!--</style>-->
+    <style name="TextAppearence.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/safe2biz_azul</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button">
+        <item name="colorButtonNormal">@color/safe2biz_colorprimary</item>
+        <item name="backgroundTint">@color/button_color</item>
+        <item name="android:textColor">@color/button_text_color</item>
+        <item name="colorControlHighlight">@color/md_black_1000</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/safe2biz_colorprimary</item>
+        <item name="colorPrimaryDark">@color/safe2biz_colorprimaryDark</item>
+        <item name="colorAccent">@color/safe2biz_azul</item>
+    </style>
+
+    <style name="AppNormalFont"  >
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+    <style name="AppThemeRedLight" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/safe2biz_colorprimary</item>
+        <item name="colorPrimaryDark">@color/safe2biz_colorprimaryDark</item>
+        <item name="colorAccent">@color/md_black_1000_50</item>
+        <item name="colorControlHighlight">@color/safe2biz_colorprimaryDark</item>​
+        <item name="colorControlNormal">@color/md_black_1000_50</item>
+        <item name="colorSwitchThumbNormal">@color/md_grey_200</item>
+        <item name="android:colorForeground">@color/md_black_1000_75</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/md_indigo_500</item>
+        <item name="android:colorBackground">@color/md_white_1000</item>
+        <item name="android:textColorPrimary">@color/md_text</item>
+        <item name="android:textColorSecondary">@color/md_secondary_text_icons</item>
+        <item name="android:textColorTertiary">@color/md_disabled_hint_text</item>
+        <item name="android:textColorPrimaryInverse">@color/md_text_white</item>
+        <item name="android:textColorSecondaryInverse">@color/md_secondary_text_icons_white</item>
+        <item name="android:textColorTertiaryInverse">@color/md_disabled_hint_text_white</item>
+        <item name="android:cacheColorHint">@color/md_divider</item>
+
+        <item name="colorButtonNormal">@color/md_black_1000_50</item>
+        <item name="colorControlActivated">@color/safe2biz_azul</item>
+
+        <!-- Navigation Drawer Arrow Style. -->
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+</resources>
