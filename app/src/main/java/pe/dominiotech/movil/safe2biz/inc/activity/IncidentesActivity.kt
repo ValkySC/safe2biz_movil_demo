@@ -29,7 +29,6 @@ import pe.dominiotech.movil.safe2biz.service.IncWS
 import pe.dominiotech.movil.safe2biz.utils.Util
 import pe.dominiotech.movil.safe2biz.utils.createDialog
 import pe.dominiotech.movil.safe2biz.utils.mapObject
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 import java.io.File
 import java.io.IOException
 import java.util.*
@@ -43,7 +42,7 @@ class IncidentesActivity : AppCompatActivity() {
     private var list: List<Incidente> = ArrayList()
 
     override fun attachBaseContext(newBase: Context) {
-        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase))
+        super.attachBaseContext(newBase)
     }
 
     private fun shouldAskPermissions(): Boolean {

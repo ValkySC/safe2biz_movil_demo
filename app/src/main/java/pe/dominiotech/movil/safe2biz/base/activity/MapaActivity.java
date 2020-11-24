@@ -16,8 +16,6 @@ import pe.dominiotech.movil.safe2biz.MainApplication;
 import pe.dominiotech.movil.safe2biz.R;
 import pe.dominiotech.movil.safe2biz.base.model.MenuPrincipalItem;
 import pe.dominiotech.movil.safe2biz.model.Usuario;
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
-
 
 public class MapaActivity extends AppCompatActivity {
 
@@ -32,7 +30,7 @@ public class MapaActivity extends AppCompatActivity {
 
     @Override
     protected void attachBaseContext(Context newBase) {
-        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+        super.attachBaseContext(newBase);
     }
 
     @Override

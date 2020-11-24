@@ -48,7 +48,6 @@ import pe.dominiotech.movil.safe2biz.service.AccWs
 import pe.dominiotech.movil.safe2biz.utils.AppConstants
 import pe.dominiotech.movil.safe2biz.utils.Util
 import pe.dominiotech.movil.safe2biz.utils.mapObject
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 
 class AccionCorrectivaDetalleActivity : AppCompatActivity(), OnClickListener, OnItemSelectedListener, OnCheckedChangeListener {
 
@@ -65,7 +64,7 @@ class AccionCorrectivaDetalleActivity : AppCompatActivity(), OnClickListener, On
     private var password: String? = null
     override fun attachBaseContext(newBase: Context) {
 
-        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase))
+        super.attachBaseContext(newBase)
     }
 
     public override fun onCreate(savedInstanceState: Bundle?) {

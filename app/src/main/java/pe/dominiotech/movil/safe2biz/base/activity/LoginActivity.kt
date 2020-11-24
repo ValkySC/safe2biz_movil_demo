@@ -27,7 +27,6 @@ import pe.dominiotech.movil.safe2biz.base.adapter.CountrySpinnerAdapter
 import pe.dominiotech.movil.safe2biz.model.Usuario
 import pe.dominiotech.movil.safe2biz.service.UsuarioService
 import pe.dominiotech.movil.safe2biz.utils.Util
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 import java.text.Normalizer
 import java.util.*
 import java.util.concurrent.TimeUnit
@@ -72,7 +71,7 @@ class LoginActivity : Activity() {
     }
 
     override fun attachBaseContext(newBase: Context) {
-        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase))
+        super.attachBaseContext(newBase)
     }
 
     private fun validateName(): Boolean {

@@ -47,7 +47,6 @@ import pe.dominiotech.movil.safe2biz.ops.model.RegistroGenerales;
 import pe.dominiotech.movil.safe2biz.ops.model.RegistroResultado;
 import pe.dominiotech.movil.safe2biz.utils.AppConstants;
 import pe.dominiotech.movil.safe2biz.utils.Util;
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class ListaVerificacionPreguntaActivity extends AppCompatActivity {
 
@@ -80,7 +79,7 @@ public class ListaVerificacionPreguntaActivity extends AppCompatActivity {
 
     @Override
     protected void attachBaseContext(Context newBase) {
-        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+        super.attachBaseContext(newBase);
     }
 
     @Override

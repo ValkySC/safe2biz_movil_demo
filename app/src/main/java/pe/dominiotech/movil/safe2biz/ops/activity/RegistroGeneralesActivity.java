@@ -23,7 +23,6 @@ import pe.dominiotech.movil.safe2biz.ops.adapter.RegistroGeneralesAdapter;
 import pe.dominiotech.movil.safe2biz.ops.model.ListaVerificacion;
 import pe.dominiotech.movil.safe2biz.ops.model.RegistroGenerales;
 import pe.dominiotech.movil.safe2biz.service.ListaVerificacionService;
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 
 public class RegistroGeneralesActivity extends AppCompatActivity {
@@ -39,7 +38,7 @@ public class RegistroGeneralesActivity extends AppCompatActivity {
 
     @Override
     protected void attachBaseContext(Context newBase) {
-        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+        super.attachBaseContext(newBase);
     }
 
     @Override

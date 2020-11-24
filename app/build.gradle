@@ -117,12 +117,11 @@ dependencies {
     api('com.twitter.sdk.android:twitter:1.8.0@aar') {
         transitive = true
     }
-    api 'uk.co.chrisjenx:calligraphy:2.1.0'
     api 'com.j256.ormlite:ormlite-core:4.48'
     api 'com.j256.ormlite:ormlite-android:4.48'
     api 'commons-io:commons-io:2.5'
     api 'com.amitshekhar.android:android-networking:1.0.0'
-    api 'com.weiwangcn.betterspinner:library-material:1.1.0'
+    implementation 'com.weiwangcn.betterspinner:library-material:1.1.0'
     api('de.keyboardsurfer.android.widget:crouton:1.8.5@aar') {
         // exclusion is not necessary, but generally a good idea.
         exclude group: 'com.google.android', module: 'support-v4'

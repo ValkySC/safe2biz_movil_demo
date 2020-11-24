@@ -48,7 +48,6 @@ import pe.dominiotech.movil.safe2biz.ops.dao.ListaVerificacionDao
 import pe.dominiotech.movil.safe2biz.service.AycWs
 import pe.dominiotech.movil.safe2biz.utils.*
 import pe.dominiotech.movil.safe2biz.utils.DatePicker
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 import java.io.File
 import java.io.IOException
 import java.sql.SQLException
@@ -76,7 +75,7 @@ class RegistroDetalleActivity : AppCompatActivity(), LocationListener, OnMapRead
     private val calendar: Calendar = Calendar.getInstance()
 
     override fun attachBaseContext(newBase: Context) {
-        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase))
+        super.attachBaseContext(newBase)
     }
 
     public override fun onCreate(savedInstanceState: Bundle?) {

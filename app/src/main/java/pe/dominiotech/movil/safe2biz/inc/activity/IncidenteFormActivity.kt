@@ -41,7 +41,6 @@ import pe.dominiotech.movil.safe2biz.base.model.Gerencia
 import pe.dominiotech.movil.safe2biz.inc.model.*
 import pe.dominiotech.movil.safe2biz.service.IncWS
 import pe.dominiotech.movil.safe2biz.utils.*
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 import java.io.File
 import java.io.IOException
 import java.sql.SQLException
@@ -64,7 +63,7 @@ class IncidenteFormActivity : AppCompatActivity(), OnClickListener, OnItemSelect
 
     override fun attachBaseContext(newBase: Context) {
 
-        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase))
+        super.attachBaseContext(newBase)
     }
 
     public override fun onCreate(savedInstanceState: Bundle?) {

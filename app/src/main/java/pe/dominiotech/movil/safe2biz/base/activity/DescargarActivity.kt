@@ -145,7 +145,7 @@ class DescargarActivity : AppCompatActivity(), OnClickListener {
                 val aycApi = app!!.getRetrofit().create(AycWs::class.java)
                 val incApi = app!!.getRetrofit().create(IncWS::class.java)
                 val fbApi = app!!.getRetrofit().create(FbWs::class.java)
-                val reportantes = aycApi.getReportantes(2)
+                val reportantes = aycApi.getReportantes(usuario!!.sc_user_id)
                     .subscribeOn(Schedulers.newThread())
                     .observeOn(AndroidSchedulers.mainThread())
                     .subscribe({
@@ -317,7 +317,6 @@ class DescargarActivity : AppCompatActivity(), OnClickListener {
                                         empresaEspecializada.fb_empresa_especializada_id = `object`.getLong("fb_empresa_especializada_id")
                                         empresaEspecializada.razon_social = `object`.getString("razon_social")
                                         empresaEspecializada.ruc_empresa = `object`.getString("ruc_empresa")
-                                        empresaEspecializada.g_rol_empresa_id = `object`.getLong("g_rol_empresa_id")
                                         if (registroDao.getById(EmpresaEspecializada::class.java, empresaEspecializada.fb_empresa_especializada_id) != null) {
                                             Log.d("Empresa", "Ya existe")
                                         } else {

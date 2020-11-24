@@ -31,7 +31,6 @@ import pe.dominiotech.movil.safe2biz.utils.AppConstants
 import pe.dominiotech.movil.safe2biz.utils.Util
 import pe.dominiotech.movil.safe2biz.utils.createDialog
 import pe.dominiotech.movil.safe2biz.utils.mapObject
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 import java.io.File
 import java.io.IOException
 import java.util.*
@@ -47,7 +46,7 @@ class RegistroActivity : AppCompatActivity() {
     internal var registroDao = RegistroDao(this, AppConstants.DB_NAME, null, AppConstants.DB_VERSION)
 
     override fun attachBaseContext(newBase: Context) {
-        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase))
+        super.attachBaseContext(newBase)
     }
 
     @TargetApi(23)

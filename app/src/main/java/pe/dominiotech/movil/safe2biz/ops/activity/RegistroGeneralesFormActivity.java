@@ -24,7 +24,6 @@ import pe.dominiotech.movil.safe2biz.ops.fragment.OpsDetalleCuestionario;
 import pe.dominiotech.movil.safe2biz.ops.fragment.OpsDetalleDatos;
 import pe.dominiotech.movil.safe2biz.ops.model.ListaVerificacion;
 import pe.dominiotech.movil.safe2biz.ops.model.RegistroGenerales;
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 
 public class RegistroGeneralesFormActivity extends AppCompatActivity implements OpsDetalleDatos.habilitar_tabs {
@@ -40,7 +39,7 @@ public class RegistroGeneralesFormActivity extends AppCompatActivity implements 
 
     @Override
     protected void attachBaseContext(Context newBase) {
-        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+        super.attachBaseContext(newBase);
     }
 
     @Override

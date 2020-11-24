@@ -25,7 +25,6 @@ import pe.dominiotech.movil.safe2biz.inc.activity.IncidentesActivity
 import pe.dominiotech.movil.safe2biz.model.Usuario
 import pe.dominiotech.movil.safe2biz.sac.activity.AccionCorrectivaActivity
 import pe.dominiotech.movil.safe2biz.utils.CircleTransform
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 import java.util.*
 
 
@@ -38,7 +37,7 @@ class MenuActivity : AppCompatActivity() {
         get() = app!!.usuarioEnSesion
 
     override fun attachBaseContext(newBase: Context) {
-        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase))
+        super.attachBaseContext(newBase)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -24,7 +24,6 @@ import pe.dominiotech.movil.safe2biz.model.UnidadBean
 import pe.dominiotech.movil.safe2biz.service.FbWs
 import pe.dominiotech.movil.safe2biz.service.ListaVerificacionService
 import pe.dominiotech.movil.safe2biz.service.UsuarioService
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 import java.util.*
 
 
@@ -54,7 +53,7 @@ class ListaUnidadesActivity : AppCompatActivity() {
 
 
     override fun attachBaseContext(newBase: Context) {
-        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase))
+        super.attachBaseContext(newBase)
     }
 
     public override fun onCreate(savedInstanceState: Bundle?) {

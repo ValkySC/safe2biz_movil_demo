@@ -21,7 +21,6 @@ import pe.dominiotech.movil.safe2biz.version.VersionService
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
-import uk.co.chrisjenx.calligraphy.CalligraphyConfig
 import java.util.concurrent.TimeUnit
 
 class MainApplication : Application() {
@@ -84,10 +83,6 @@ class MainApplication : Application() {
             config.locale = locale
             baseContext.resources.updateConfiguration(config, baseContext.resources.displayMetrics)
         }
-        CalligraphyConfig.initDefault(CalligraphyConfig.Builder()
-                .setDefaultFontPath("Roboto-Regular.ttf")
-                .setFontAttrId(R.attr.fontPath)
-                .build())
 
     }
 
