@@ -52,7 +52,6 @@ public class UsuarioDao extends SQLiteHelper{
 		RuntimeExceptionDao<Usuario, String> usuarioDao = createDao(Usuario.class);
 		Map<String, Object> fields = new HashMap<String, Object>();
 		fields.put("usuario_id", usuario.getUsuario_id());
-//		fields.put("user_login", usuario.getUser_login());
 //		fields.put("password", usuario.getPassword());
 //		fields.put("ip_o_dominio_servidor", usuario.getIpOrDominioServidor());
 		List<Usuario> usuarioList = usuarioDao.queryForFieldValues(fields);

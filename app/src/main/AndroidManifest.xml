@@ -97,6 +97,35 @@
             android:configChanges="orientation|layoutDirection|locale"
             android:label="@string/app_name"
             android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".inc.activity.DashboardIncidentesActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:configChanges="orientation|layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".inc.activity.DashboardRendimientoActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:configChanges="orientation|layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+
+        <activity
+        android:name=".inc.activity.ReporteIncidentesActivity"
+        android:theme="@style/Theme.AppCompat"
+        android:configChanges="orientation|layoutDirection|locale"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".inc.activity.ReporteAccionesActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:configChanges="orientation|layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".inc.activity.IncidenteFormActivity"
             android:theme="@style/Theme.AppCompat"

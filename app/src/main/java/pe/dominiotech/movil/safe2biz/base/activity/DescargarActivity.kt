@@ -128,9 +128,9 @@ class DescargarActivity : AppCompatActivity(), OnClickListener {
             //            String URL_EXT = "http://192.168.1.54:7777/safe2biz";
             val headers = HashMap<String, String>()
             var userLogin = "${usuario!!.user_login}@${usuario!!.empresa}"
-            if (usuario!!.pais!!.isNotEmpty()) {
-                userLogin = "${usuario!!.pais!!}\\${userLogin}"
-            }
+            //if (usuario!!.pais!!.isNotEmpty()) {
+            //    userLogin = "${usuario!!.pais!!}\\${userLogin}"
+            //}
             headers["userLogin"] = userLogin
             headers["userPassword"] = usuario!!.password
             headers["systemRoot"] = "safe2biz"

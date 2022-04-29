@@ -21,7 +21,7 @@ import pe.dominiotech.movil.safe2biz.ayc.activity.RegistroActivity
 import pe.dominiotech.movil.safe2biz.ayc.activity.RegistroDetalleActivity
 import pe.dominiotech.movil.safe2biz.base.adapter.MenuPrincipalAdapter
 import pe.dominiotech.movil.safe2biz.base.model.MenuPrincipalItem
-import pe.dominiotech.movil.safe2biz.inc.activity.IncidentesActivity
+import pe.dominiotech.movil.safe2biz.inc.activity.*
 import pe.dominiotech.movil.safe2biz.model.Usuario
 import pe.dominiotech.movil.safe2biz.sac.activity.AccionCorrectivaActivity
 import pe.dominiotech.movil.safe2biz.utils.CircleTransform
@@ -65,6 +65,10 @@ class MenuActivity : AppCompatActivity() {
                 4 -> i = Intent(applicationContext, RegistroDetalleActivity::class.java)
                 5 -> i = Intent(applicationContext, MapaActivity::class.java)
                 6 -> i = Intent(applicationContext, AccionCorrectivaActivity::class.java)
+                7 -> i = Intent(applicationContext, DashboardIncidentesActivity::class.java)
+                8 -> i = Intent(applicationContext, DashboardRendimientoActivity::class.java)
+                9 -> i = Intent(applicationContext, ReporteIncidentesActivity::class.java)
+                10 -> i = Intent(applicationContext, ReporteAccionesActivity::class.java)
             }
             i.putExtra("menuPrincipalItem", menuPrincipalItem)
             startActivity(i)
@@ -177,6 +181,31 @@ class MenuActivity : AppCompatActivity() {
         menuPrincipalItem.titulo = "Acciones Correctivas"
         menuPrincipalItem.icono = R.drawable.ic_encuestas
         menuList.add(menuPrincipalItem)
+
+        menuPrincipalItem = MenuPrincipalItem()
+        menuPrincipalItem.orden = 7
+        menuPrincipalItem.titulo = "Gráficos de Incidentes"
+        menuPrincipalItem.icono = R.drawable.icon_graficos
+        menuList.add(menuPrincipalItem)
+
+        menuPrincipalItem = MenuPrincipalItem()
+        menuPrincipalItem.orden = 8
+        menuPrincipalItem.titulo = "Gráficos de Rendimiento"
+        menuPrincipalItem.icono = R.drawable.icon_graficos
+        menuList.add(menuPrincipalItem)
+
+        menuPrincipalItem = MenuPrincipalItem()
+        menuPrincipalItem.orden = 9
+        menuPrincipalItem.titulo = "Reporte de Incidentes"
+        menuPrincipalItem.icono = R.drawable.icon_reportes
+        menuList.add(menuPrincipalItem)
+
+        menuPrincipalItem = MenuPrincipalItem()
+        menuPrincipalItem.orden = 10
+        menuPrincipalItem.titulo = "Reporte de Planes de Acción"
+        menuPrincipalItem.icono = R.drawable.icon_reportes
+        menuList.add(menuPrincipalItem)
+
         //
         //        menuPrincipalItem = new MenuPrincipalItem();
         //        menuPrincipalItem.setOrden(5);

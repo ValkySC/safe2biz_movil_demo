@@ -42,6 +42,12 @@ class Usuario : Serializable {
     var password_servidor: String? = null                   // Contrasenia servidor
     @DatabaseField(columnName = "url_ext")
     var url_ext: String? = null                   // URL_Ext
+    @DatabaseField(columnName = "url_app")
+    var url_app: String? = null                   // URL_Ext
+    @DatabaseField(columnName = "arroba")
+    var arroba: String? = null                   // URL_Ext
+    @DatabaseField(columnName = "enterprise")
+    var enterprise: String? = null                   // Enterprise
 
     var idDispositivo: String? = null
     var urlProfilePicture: String? = null

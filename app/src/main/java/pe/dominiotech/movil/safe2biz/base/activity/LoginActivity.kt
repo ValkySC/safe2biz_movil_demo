@@ -51,6 +51,8 @@ class LoginActivity : Activity() {
                     result = true
                 } else if (capabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)) {
                     result = true
+                } else if (capabilities.hasTransport(NetworkCapabilities.TRANSPORT_VPN)) {
+                    result = true
                 }
             }
             return result
@@ -164,20 +166,20 @@ class LoginActivity : Activity() {
                 } else {
                     if (isOnline) {
                         val headers = HashMap<String, String>()
-                        if (paisStr.isEmpty()) {
+                        //if (paisStr.isEmpty()) {
                             headers["userLogin"] = "$emailStr@$empresa"
-                        } else {
-                            headers["userLogin"] = "$paisStr\\$emailStr@$empresa"
-                        }
+                        //} else {
+                        //    headers["userLogin"] = "$paisStr\\$emailStr@$empresa"
+                        //}
 
                         headers["userPassword"] = passwordStr
                         headers["systemRoot"] = "safe2biz"
                         val parameters = HashMap<String, String>()
-                        if (paisStr.isEmpty()) {
+                        //if (paisStr.isEmpty()) {
                             parameters["user_login"] = emailStr
-                        } else {
-                            parameters["user_login"] = "$paisStr\\$emailStr"
-                        }
+                        //} else {
+                        //    parameters["user_login"] = "$paisStr\\$emailStr"
+                        //}
                         val builder = AlertDialog.Builder(this)
                         builder.setCancelable(false)
                         builder.setView(R.layout.layout_loading_dialog)
@@ -187,6 +189,8 @@ class LoginActivity : Activity() {
                         val okHttpClient = OkHttpClient().newBuilder()
                                 .connectTimeout(10, TimeUnit.SECONDS)
                                 .build()
+
+                        val url_post = ipOrDominioServidor + resources.getString(R.string.SERVICIO_SC_USER)
 
                         AndroidNetworking.post(ipOrDominioServidor + resources.getString(R.string.SERVICIO_SC_USER))
                                 .addBodyParameter(parameters)
@@ -209,6 +213,9 @@ class LoginActivity : Activity() {
                                                 usuario.fb_empleado_id = `object`.getLong("fb_empleado_id")
                                                 //                                                usuario.setNombre_empleado(object.getString("nombre_empleado"));
                                                 usuario.url_ext = `object`.getString("URL_EXT")
+                                                usuario.url_app = `object`.getString("URL_APP")
+                                                usuario.arroba = `object`.getString("ARROBA")
+                                                usuario.enterprise = `object`.getString("ENTERPRISE")
                                                 usuario.ipOrDominioServidor = ipOrDominioServidor
                                                 usuario.empresa = empresa
                                                 usuario.pais = paisStr
@@ -242,6 +249,7 @@ class LoginActivity : Activity() {
                                             }
 
                                         } else {
+                                            Toast.makeText(app, Integer.toString(error.errorCode) + error.errorBody + error.errorDetail + error.response, Toast.LENGTH_SHORT).show()
                                             Toast.makeText(app, "Ha ocurrido un error en la conexión, revisa tu conexión a internet o la ip/dominio del servidor...", Toast.LENGTH_SHORT).show()
                                         }
                                     }

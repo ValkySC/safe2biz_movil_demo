@@ -93,9 +93,9 @@ class MainApplication : Application() {
 
     fun getRetrofit(): Retrofit {
         var userLogin = usuarioEnSesion!!.user_login + "@" + usuarioEnSesion!!.empresa
-        if (usuarioEnSesion!!.pais!!.isNotEmpty()) {
-            userLogin = "${usuarioEnSesion!!.pais!!}\\${userLogin}"
-        }
+        //if (usuarioEnSesion!!.pais!!.isNotEmpty()) {
+        //    userLogin = "${usuarioEnSesion!!.pais!!}\\${userLogin}"
+        //}
 
         val httpClient = OkHttpClient.Builder()
         httpClient

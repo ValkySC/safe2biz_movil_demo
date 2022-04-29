@@ -45,20 +45,20 @@ android:orientation="vertical">
                 android:textStyle="bold"
                 android:textColor="@color/app_letra_tab"
                 android:text="@string/ip_dominio_servidor"/>
+
             <EditText
                 android:id="@+id/edt_ipSv"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="30dp"
                 android:layout_weight="1"
-                android:inputType="textEmailAddress|textNoSuggestions|textMultiLine"
-                android:hint="@string/ip_dominio"
-                android:textColor="@color/md_grey_600"
-                android:paddingLeft="6dp"
                 android:background="@drawable/border_sac_separador_cardview"
-                android:text="http://190.81.60.180:8080/techbuilder_ws"
+                android:hint="@string/ip_dominio"
+                android:inputType="textEmailAddress|textNoSuggestions|textMultiLine"
                 android:maxLines="3"
-                />
+                android:minHeight="30dp"
+                android:paddingLeft="6dp"
+                android:text="https://app.safe2biz.com/safe2biz_demo"
+                android:textColor="@color/md_grey_600" />
 
         </LinearLayout>
         <LinearLayout
@@ -80,14 +80,14 @@ android:orientation="vertical">
                 android:id="@+id/edt_empresa"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textNoSuggestions"
-                android:hint="Empresa"
-                android:textColorHint="@color/md_black_1000_25"
-                android:textColor="@color/app_letra_tab"
-                android:text="fortuna"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/border_sac_separador_cardview"
+                android:hint="Empresa"
+                android:inputType="textNoSuggestions"
                 android:paddingLeft="6dp"
-                android:layout_marginTop="10dp"/>
+                android:text="safe2biz_demo"
+                android:textColor="@color/app_letra_tab"
+                android:textColorHint="@color/md_black_1000_25" />
 
         </LinearLayout>
     </LinearLayout>

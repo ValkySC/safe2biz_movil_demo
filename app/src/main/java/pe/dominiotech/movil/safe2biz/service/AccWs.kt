@@ -16,7 +16,7 @@ interface AccWs {
     ): Observable<Data>
 
     @FormUrlEncoded
-    @POST("ws/null/pr_movil_ACC_Actualiza")
+    @POST("ws/null/pr_movil_acc_actualiza")
     fun actualizarAcc(@FieldMap fields: Map<String, String>): Observable<JsonObject>
 }
 

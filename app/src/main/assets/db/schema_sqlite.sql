@@ -34,7 +34,10 @@ CREATE TABLE T_SC_USER (
 	ip_o_dominio_servidor   varchar(200) null,
 	user_login_servidor     varchar(200) null,
     password_servidor       varchar(100) null,
-    url_ext                 varchar(100) null
+    url_ext                 varchar(100) null,
+    url_app                 varchar(100) null,
+    arroba                  varchar(100) null,
+    enterprise              varchar(100) null
 );
 
 ------------------FB---------------------
